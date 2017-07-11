@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ejercicio11 {
-    public class ProcesoPesar : IPesar {
+    public class Bascula : IBascula {
 
-        public int Pesar(Alimentos alimento1, Alimentos alimento2) {
-            return alimento1.peso+alimento2.peso;
+        public int Pesar(Alimentos alimento1) {
+            return alimento1.peso;
         }
     }
 }

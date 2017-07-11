@@ -4,15 +4,18 @@ using Ejercicio11;
 
 namespace UnitTestProject11 {
     [TestClass]
-    public class ProcesoCocinarTest {
+    public class CocinaServiceTest {
         [TestMethod]
         public void TestCocinar() {
+            ICocina sut = new CocinaService();
+
             Alimentos alimento1 = new Alimentos();
             Alimentos alimento2 = new Alimentos();
-            Platos plato;
-            ProcesoCocinar cocina = new ProcesoCocinar();
-            plato = cocina.Cocinar(alimento1, alimento2);
-            Assert.AreEqual(plato, plato);
+
+            sut.Calentar(alimento1, alimento2);
+
+            Assert.IsTrue(alimento1.Calentado);
+            Assert.IsTrue(alimento2.Calentado);
         }
     }
 }

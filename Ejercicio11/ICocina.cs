@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ejercicio11 {
-    public interface IPesar {
-        int Pesar(Alimentos alimento1, Alimentos alimento2);
+    public interface ICocina {
+        void Calentar(Alimentos alimento1, Alimentos alimento2);
     }
 }

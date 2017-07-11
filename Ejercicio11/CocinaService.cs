@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ejercicio11 {
-    public class ProcesoCocinar : ICocina {
+    public class CocinaService : ICocina{
 
-        
         public void Calentar(Alimentos alimento1, Alimentos alimento2) {
-            throw new NotImplementedException();
+            alimento1.Calentado = true;
+            alimento2.Calentado = true;            
         }
     }
 }

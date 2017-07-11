@@ -12,5 +12,19 @@ namespace Ejercicio11
             set;
         }
 
+        public bool Calentado {
+            get;
+            set;
+        }
+        public Alimentos() {
+            this.peso = 0;
+            this.Calentado = false;
+        }
+
+        public Alimentos(int peso, bool calentado) {
+            this.peso = peso;
+            this.Calentado = calentado;
+        }
+
     }
 }
