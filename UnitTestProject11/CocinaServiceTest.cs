@@ -7,7 +7,7 @@ namespace UnitTestProject11 {
     public class CocinaServiceTest {
         [TestMethod]
         public void TestCocinar() {
-            ICocina sut = new CocinaService();
+            ICocina sut = new Cocina();
 
             Alimentos alimento1 = new Alimentos();
             Alimentos alimento2 = new Alimentos();
