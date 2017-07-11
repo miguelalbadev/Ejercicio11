@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alimentos.cs" />
+    <Compile Include="CocinarService.cs" />
     <Compile Include="ICocinar.cs" />
     <Compile Include="IPesar.cs" />
     <Compile Include="Platos.cs" />
