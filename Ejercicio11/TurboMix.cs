@@ -11,6 +11,10 @@ namespace Ejercicio11 {
         public IBascula Bascula {get;set;}
         public ICocina Cocina {get;set;}
 
+        public TurboMix() {
+
+        }
+
         public TurboMix(IBascula Bascula, ICocina Cocina) {
             this.Bascula = Bascula;
             this.Cocina = Cocina;
