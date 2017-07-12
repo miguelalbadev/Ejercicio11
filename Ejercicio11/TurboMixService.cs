@@ -6,12 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ejercicio11 {
-    public class TurboMix {
+    public class TurboMixService {
                 
         public IBascula Bascula {get;set;}
         public ICocina Cocina {get;set;}
 
-        public TurboMix(IBascula Bascula, ICocina Cocina) {
+        public TurboMixService(IBascula Bascula, ICocina Cocina) {
             this.Bascula = Bascula;
             this.Cocina = Cocina;
         }

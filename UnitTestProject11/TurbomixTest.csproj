@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
@@ -55,11 +58,12 @@
     <Compile Include="CocinaServiceTest.cs" />
     <Compile Include="ProcesoPesarTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TurboMixServiceIntegracionTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ejercicio11\Ejercicio11.csproj">
+    <ProjectReference Include="..\Ejercicio11\Turbomix.csproj">
       <Project>{EBE8B5A4-EC18-412A-B939-D447AF5B56CB}</Project>
-      <Name>Ejercicio11</Name>
+      <Name>Turbomix</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
