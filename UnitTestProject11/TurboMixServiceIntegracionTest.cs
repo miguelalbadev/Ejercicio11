@@ -12,12 +12,15 @@ namespace UnitTestProject11 {
 
             TurboMixService sut = new TurboMixService(basculaService, cocinaService);
             Alimentos alimento1 = new Alimentos();
-            
-            alimento1.peso = 15;
+            alimento1.Nombre = "patata";
+            alimento1.peso = 25;
+
             Alimentos alimento2 = new Alimentos();
-            alimento2.peso = 30;
-            
-            Platos resultado = sut.ProcesoCompleto(alimento1, alimento2);
+            alimento2.Nombre = "zanahoria";
+            alimento2.peso = 35;
+
+            RecetaService miReceta = new RecetaService(alimento1, alimento2, 25, 35);
+            Platos resultado = sut.ProcesoCompleto(miReceta);
             
             Platos mPlato = new Platos(alimento1, alimento2);
             

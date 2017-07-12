@@ -15,14 +15,19 @@ namespace Ejercicio11 {
             this.Bascula = Bascula;
             this.Cocina = Cocina;
         }
+               
+        public Platos ProcesoCompleto(RecetaService miReceta) {
+            
+            int peso1 = Bascula.Pesar(miReceta.alimento1);
+            int peso2 = Bascula.Pesar(miReceta.alimento2);
+            if (peso1 == miReceta.pesoAlimento1 && peso2==miReceta.pesoAlimento2) {
+                if (miReceta.alimento1.Calentado == false && miReceta.alimento2.Calentado == false) {
+                    Cocina.Calentar(miReceta.alimento1, miReceta.alimento2);
+                    return new Platos(miReceta.alimento1, miReceta.alimento2);
+                }
+            }
 
-        public Platos ProcesoCompleto(Alimentos alimento1, Alimentos alimento2) {
-            
-            int peso1 = Bascula.Pesar(alimento1);
-            int peso2 = Bascula.Pesar(alimento2);
-            
-            Cocina.Calentar(alimento1, alimento2);
-            return new Platos(alimento1, alimento1);
+            return null;
         }
     }
 }
