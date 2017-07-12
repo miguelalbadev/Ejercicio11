@@ -16,7 +16,7 @@ namespace Ejercicio11 {
             this.Cocina = Cocina;
         }
                
-        public Platos ProcesoCompleto(RecetaService miReceta) {
+        public Platos ProcesoCompleto(Receta miReceta) {
             
             int peso1 = Bascula.Pesar(miReceta.alimento1);
             int peso2 = Bascula.Pesar(miReceta.alimento2);

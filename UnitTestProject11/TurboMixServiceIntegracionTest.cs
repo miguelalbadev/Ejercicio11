@@ -19,7 +19,7 @@ namespace UnitTestProject11 {
             alimento2.Nombre = "zanahoria";
             alimento2.peso = 35;
 
-            RecetaService miReceta = new RecetaService(alimento1, alimento2, 25, 35);
+            Receta miReceta = new Receta(alimento1, alimento2, 25, 35);
             Platos resultado = sut.ProcesoCompleto(miReceta);
             
             Platos mPlato = new Platos(alimento1, alimento2);
