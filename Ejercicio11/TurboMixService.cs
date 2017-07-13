@@ -16,17 +16,24 @@ namespace Ejercicio11 {
             this.Cocina = Cocina;
         }
                
-        public Platos ProcesoCompleto(Receta miReceta) {
+        public Platos PrepararPlato(Receta miReceta, Alimentos alimento1, Alimentos alimento2) {
             
             int peso1 = Bascula.Pesar(miReceta.alimento1);
             int peso2 = Bascula.Pesar(miReceta.alimento2);
-            if (peso1 == miReceta.pesoAlimento1 && peso2==miReceta.pesoAlimento2) {
-                if (miReceta.alimento1.Calentado == false && miReceta.alimento2.Calentado == false) {
+            if (!alimento1.Calentado && !alimento2.Calentado) {
+                if(peso1 >= miReceta.pesoAlimento1 && peso2 >= miReceta.pesoAlimento2) {
+                    alimento1.peso = miReceta.pesoAlimento1;
+                    alimento2.peso = miReceta.pesoAlimento2;
+
                     Cocina.Calentar(miReceta.alimento1, miReceta.alimento2);
                     return new Platos(miReceta.alimento1, miReceta.alimento2);
                 }
             }
+            
+            return null;
+        }
 
+        public Platos PrepararPlatoConReceta() {
             return null;
         }
     }

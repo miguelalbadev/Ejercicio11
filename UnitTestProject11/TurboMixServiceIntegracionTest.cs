@@ -5,22 +5,31 @@ using Ejercicio11;
 namespace UnitTestProject11 {
     [TestClass]
     public class TurboMixServiceIntegracionTest {
-        [TestMethod]
-        public void TestPrepararPlato() {
+        private TurboMixService sut;
+        private Alimentos alimento1;
+        private Alimentos alimento2;
+
+        [TestInitialize]
+            public void init() {
             IBascula basculaService = new BasculaService();
             ICocina cocinaService = new CocinaService();
 
-            TurboMixService sut = new TurboMixService(basculaService, cocinaService);
-            Alimentos alimento1 = new Alimentos();
+            sut = new TurboMixService(basculaService, cocinaService);
+            alimento1 = new Alimentos();
             alimento1.Nombre = "patata";
             alimento1.peso = 25;
 
-            Alimentos alimento2 = new Alimentos();
+            alimento2 = new Alimentos();
             alimento2.Nombre = "zanahoria";
             alimento2.peso = 35;
+        }
+   
+        [TestMethod]
+        public void TestPrepararPlato() {
+            
 
             Receta miReceta = new Receta(alimento1, alimento2, 25, 35);
-            Platos resultado = sut.ProcesoCompleto(miReceta);
+            Platos resultado = sut.PrepararPlato(miReceta,alimento1,alimento2);
             
             Platos mPlato = new Platos(alimento1, alimento2);
             
