@@ -49,6 +49,7 @@
     <Compile Include="BasculaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receta.cs" />
+    <Compile Include="RecetaRepositorio.cs" />
     <Compile Include="TurboMixService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

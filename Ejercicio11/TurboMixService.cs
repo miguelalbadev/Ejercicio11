@@ -17,7 +17,7 @@ namespace Ejercicio11 {
         }
                
         public Platos PrepararPlato(Receta miReceta, Alimentos alimento1, Alimentos alimento2) {
-            
+            Platos platoReturn = null;
             int peso1 = Bascula.Pesar(miReceta.alimento1);
             int peso2 = Bascula.Pesar(miReceta.alimento2);
             if (!alimento1.Calentado && !alimento2.Calentado) {
@@ -26,7 +26,8 @@ namespace Ejercicio11 {
                     alimento2.peso = miReceta.pesoAlimento2;
 
                     Cocina.Calentar(miReceta.alimento1, miReceta.alimento2);
-                    return new Platos(miReceta.alimento1, miReceta.alimento2);
+                    platoReturn = new Platos(miReceta.alimento1, miReceta.alimento2);
+                    return platoReturn;
                 }
             }
             
