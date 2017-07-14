@@ -24,5 +24,17 @@ namespace UnitTestProject11 {
             mockRecetaRepositorio.Verify(recetaRepository => recetaRepository.Crear(It.IsAny<Receta>()), Times.Once);
             
         }
+
+        [TestMethod]
+        public void TestLeer() {
+            var mockRecetaRepositorio = new Mock<IRecetaRepositorio>();
+            Receta receta = new Receta();
+
+            IRecetaService sut = new RecetaService(mockRecetaRepositorio.Object);
+            sut.Aniadir(receta);
+
+            mockRecetaRepositorio.Verify(recetaRepository => recetaRepository.Crear(It.IsAny<Receta>()), Times.Once);
+
+        }
     }
 }

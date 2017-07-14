@@ -21,5 +21,39 @@ namespace UnitTestProject11 {
             sut.Aniadir(receta);
             
         }
+        [TestMethod]
+        public void TestLeer() {
+            IRecetaRepositorio recetaRepositorio = new RecetaRepositorio();
+            IRecetaService sut = new RecetaService(recetaRepositorio);
+
+            sut.Leer();
+        }
+
+        [TestMethod]
+        public void TestLeerReceta() {
+            Receta receta = new Receta();
+            IRecetaRepositorio recetaRepositorio = new RecetaRepositorio();
+            IRecetaService sut = new RecetaService(recetaRepositorio);
+
+            sut.LeeReceta(receta.nombre);
+        }
+
+        [TestMethod]
+        public void TestUpdateReceta() {
+            Receta receta = new Receta();
+            IRecetaRepositorio recetaRepositorio = new RecetaRepositorio();
+            IRecetaService sut = new RecetaService(recetaRepositorio);
+
+            sut.Update(receta);
+        }
+
+        [TestMethod]
+        public void TestDeleteReceta() {
+            Receta receta = new Receta();
+            IRecetaRepositorio recetaRepositorio = new RecetaRepositorio();
+            IRecetaService sut = new RecetaService(recetaRepositorio);
+
+            sut.Delete(receta);
+        }
     }
 }
