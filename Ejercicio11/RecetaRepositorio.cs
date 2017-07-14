@@ -5,6 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ejercicio11 {
-    class RecetaRepositorio {
+    public class RecetaRepositorio:IRecetaRepositorio {
+
+        private IList<Receta> listaRecetas = new List<Receta>();
+
+        public void Crear(Receta receta) {
+            listaRecetas.Add(receta);
+        }
+
+        
     }
 }

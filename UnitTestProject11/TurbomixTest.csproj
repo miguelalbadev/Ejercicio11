@@ -66,6 +66,8 @@
     <Compile Include="CocinaServiceTest.cs" />
     <Compile Include="ProcesoPesarTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecetaServiceIntegracionTest.cs" />
+    <Compile Include="RecetaServiceTest.cs" />
     <Compile Include="TurboMixServiceTest .cs" />
     <Compile Include="TurboMixServiceIntegracionTest.cs" />
   </ItemGroup>
