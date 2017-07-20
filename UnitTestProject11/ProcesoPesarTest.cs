@@ -7,12 +7,12 @@ namespace UnitTestProject11 {
     public class ProcesoPesarTest {
         [TestMethod]
         public void TestPesar() {
-
+            
             Alimentos alimento1 = new Alimentos();
             alimento1.peso = 15;
             Alimentos alimento2 = new Alimentos();
             alimento2.peso = 30;
-            IBascula procesoPesar = new Bascula();
+            IBascula procesoPesar = new BasculaService();
             //int resultado = procesoPesar.Pesar(alimento1, alimento2);
             //Assert.AreEqual(resultado, 45);
         }

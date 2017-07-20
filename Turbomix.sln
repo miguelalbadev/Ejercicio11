@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio11", "Ejercicio11\Ejercicio11.csproj", "{EBE8B5A4-EC18-412A-B939-D447AF5B56CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbomix", "Ejercicio11\Turbomix.csproj", "{EBE8B5A4-EC18-412A-B939-D447AF5B56CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject11", "UnitTestProject11\UnitTestProject11.csproj", "{5B005C46-6053-470F-BA0E-B541B71618D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurbomixTest", "UnitTestProject11\TurbomixTest.csproj", "{5B005C46-6053-470F-BA0E-B541B71618D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
