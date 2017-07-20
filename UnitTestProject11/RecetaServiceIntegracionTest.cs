@@ -23,6 +23,7 @@ namespace UnitTestProject11 {
             container = new UnityContainer();
             container.RegisterType<IRecetaRepositorio, RecetaRepositorio>();
             container.RegisterType<IRecetaService, RecetaService>();
+            
         }
 
 

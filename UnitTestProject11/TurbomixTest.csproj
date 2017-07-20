@@ -75,6 +75,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CategoriaServiceTest.cs" />
     <Compile Include="CocinaServiceTest.cs" />
     <Compile Include="ProcesoPesarTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

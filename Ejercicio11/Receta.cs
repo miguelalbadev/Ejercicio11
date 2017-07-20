@@ -9,6 +9,7 @@ namespace Ejercicio11 {
         public string nombre { get; set; }
         public Alimentos alimento1 { get; set; }
         public Alimentos alimento2 { get; set; }
+        public Categorias categoria { get; set; }
 
         public int pesoAlimento1 { get; set; }
         public int pesoAlimento2 { get; set; }
